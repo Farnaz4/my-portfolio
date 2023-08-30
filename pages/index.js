@@ -1,5 +1,10 @@
 import Head from 'next/head';
 import {BsFillMoonStarsFill} from 'react-icons/bs';
+import {AiFillTwitterCircle, AiFillLinkedin, AiFillYoutube,} from "react-icons/ai";
+import Image from "next/image";
+import deved from "../public/dev-ed-wave.png"
+
+
 
 export default function Home() {
   return (
@@ -10,20 +15,39 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="bg-white px-10">
+      <main className=" bg-white px-10">
         <section className= "min-h-screen">
           <nav className="py-10 mb-12 flex justify-between">
-            <h1 className='text-xl'>develpoedbyed</h1>
+            <h1 className='text-xl font-burtons'>develpoedbyfarnaz</h1>
             <ul className="flex items-center">
               <li>
-                 <BsFillMoonStarsFill/>
+                 <BsFillMoonStarsFill className="cursor-pointer text-2xl"/>
               </li>
               <li>
-                 <a href="#">Resume</a>
+                 <a className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2
+                 rounded-md ml-8" href="#">Resume</a>
               </li>
             </ul>
 
           </nav>
+          <div className="text-center p-10 ">
+            <h2 className='text-5xl py-2 text-teal-600 font-medium'>Farnaz Fawad Hasan</h2>
+            <h3 className='text-2xl py-2 '>Developer and Designer.</h3>
+            <p className='text-md py-5 leading-8  text-gray-800'>Meet Farnaz, a passionate advocate for community engagement and sustainable development. With a background in environmental science and project management, she's driven to create positive change through collaborative initiatives. From clean-up campaigns to education programs, Farnaz is dedicated to fostering unity and empowerment. Join her on a journey of impactful transformation.</p>
+          </div>
+
+          <div className='text-5xl flex justify-center gap-16 py-3 text-gray-600'>
+            <AiFillTwitterCircle/>
+            <AiFillLinkedin />
+            <AiFillYoutube />
+
+          </div>
+
+          <div className='relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden'>
+            <Image src={deved} layout = "fill" objectFit="cover" />
+
+
+          </div>
 
         </section>
       </main>
@@ -33,3 +57,7 @@ export default function Home() {
     
   );
 }
+
+
+
+//startfrom 29:39
