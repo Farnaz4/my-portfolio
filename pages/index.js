@@ -3,8 +3,9 @@ import {BsFillMoonStarsFill} from 'react-icons/bs';
 import {AiFillTwitterCircle, AiFillLinkedin, AiFillYoutube,} from "react-icons/ai";
 import Image from "next/image";
 import deved from "../public/dev-ed-wave.png"
-
-
+import design from "../public/design.png"
+import code from "../public/code.png"
+import consulting from "../public/consulting.png"
 
 export default function Home() {
   return (
@@ -50,6 +51,72 @@ export default function Home() {
           </div>
 
         </section>
+
+{/* Start of Section 2 */}
+
+        <section>
+          <div>
+          <h3 className="text-3xl py-1">Services I offer</h3>
+          <p className='text-md py-5 leading-8  text-gray-800'>
+          Farnaz offers a range of dynamic services that reflect her expertise and passions. 
+          From <span className='text-teal-500'>crafting</span> captivating websites and user-friendly mobile applications to offering insightful tech consultations, she's your go-to resource for all things tech. With a knack for simplifying the complex, Farnaz also conducts interactive coding workshops and provides comprehensive project management to ensure seamless execution. Beyond the tech realm, her commitment extends to environmental consulting, where she shares sustainable practices and empowers positive change. Whether you're seeking innovative digital solutions or aiming to foster community engagement, Farnaz is here to guide you on a journey of growth and transformation.
+
+          </p>
+
+          </div>
+
+          <div>
+          <div className="text-center shadow-lg p-10 rounded-xl my-10  dark:bg-white flex-1">
+              <Image src={design} width={100} height={100} />
+              <h3 className="text-lg font-medium pt-8 pb-2  ">
+                Beautiful Designs
+              </h3>
+              <p className="py-2">
+                Creating elegant designs suited for your needs following core
+                design theory.
+              </p>
+              <h4 className="py-4 text-teal-600">Design tools I use</h4>
+              <p className="text-gray-800 py-1">Photoshop</p>
+              <p className="text-gray-800 py-1">Illustrator</p>
+              <p className="text-gray-800 py-1">Figma</p>
+
+            </div>
+
+            <div className="text-center shadow-lg p-10 rounded-xl my-10  dark:bg-white flex-1">
+              <Image src={consulting} width={100} height={100} />
+              <h3 className="text-lg font-medium pt-8 pb-2  ">
+                Beautiful Designs
+              </h3>
+              <p className="py-2">
+                Creating elegant designs suited for your needs following core
+                design theory.
+              </p>
+              <h4 className="py-4 text-teal-600">Design tools I use</h4>
+              <p className="text-gray-800 py-1">Photoshop</p>
+              <p className="text-gray-800 py-1">Illustrator</p>
+              <p className="text-gray-800 py-1">Figma</p>
+
+            </div>
+
+            <div className="text-center shadow-lg p-10 rounded-xl my-10  dark:bg-white flex-1">
+              <Image src={code} width={100} height={100} />
+              <h3 className="text-lg font-medium pt-8 pb-2  ">
+                Beautiful Designs
+              </h3>
+              <p className="py-2">
+                Creating elegant designs suited for your needs following core
+                design theory.
+              </p>
+              <h4 className="py-4 text-teal-600">Design tools I use</h4>
+              <p className="text-gray-800 py-1">Photoshop</p>
+              <p className="text-gray-800 py-1">Illustrator</p>
+              <p className="text-gray-800 py-1">Figma</p>
+
+            </div>
+
+          </div>
+        </section>
+
       </main>
          
     </div>
@@ -60,4 +127,3 @@ export default function Home() {
 
 
 
-//startfrom 29:39
