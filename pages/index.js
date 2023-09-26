@@ -11,6 +11,8 @@ import consulting from "../public/consulting.png";
 import Farnaz11 from "../public/Farnaz11.jpg";
 import Farnaz2 from "../public/Farnaz2.jpg";
 
+
+
 import web1 from "../public/web1.png";
 import web2 from "../public/web2.png";
 import web3 from "../public/web3.png";
@@ -44,8 +46,8 @@ export default function Home() {
                 />
               </li>
               <li>
-                 <a className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2
-                 rounded-md ml-8" href="#">Resume</a>
+                 <a href="/Resume.pdf" download="Resume.pdf" className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2
+                 rounded-md ml-8  ">Resume</a>
               </li>
             </ul>
 
@@ -149,7 +151,7 @@ export default function Home() {
       
         <section>
           <div>
-            <h3 className='text-3xl py-1 dark:text-blue-400'> Portfolio</h3>
+            <h3 className='text-3xl py-1 dark:text-blue-400'> Projects</h3>
             <p className="text-md py-2 leading-8 text-gray-800 text-black-200 dark:text-white">
               Since the beginning of my journey as a freelance designer and
               developer, I've done remote work for
